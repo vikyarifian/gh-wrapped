@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+/* Workaround for Next.js 16 CSS hydration delay causing flash of unstyled content on route transitions */
+:root {
+  --github-black: #0d1117;
+  --github-dark: #161b22;
+  --github-border: #30363d;
+  --github-green: #2ea44f;
+  --github-text: #c9d1d9;
+}
+
+body {
+  background-color: var(--github-black);
+  color: var(--github-text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+/* Custom scrollbar for Indonesian team dashboard look */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--github-black);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--github-border);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #8b949e;
+}
